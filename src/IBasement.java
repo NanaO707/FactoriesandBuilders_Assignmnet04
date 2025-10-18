@@ -1,5 +1,3 @@
-class IBasement {
-    void display() {
-
-    }
+public interface IBasement {
+    void display();
 }

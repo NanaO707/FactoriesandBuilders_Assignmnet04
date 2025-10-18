@@ -1,6 +1,3 @@
-class IStructure {
-    void display()
-    {
-
-    }
+public interface IStructure {
+   void display();
 }

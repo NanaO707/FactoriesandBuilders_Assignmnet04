@@ -1,5 +1,5 @@
-class BasementQuebecois {
-    void display()
+class BasementQuebecois implements IBasement {
+    public void display()
     {
 
     }

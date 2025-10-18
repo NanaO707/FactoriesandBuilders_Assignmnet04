@@ -1,3 +1,3 @@
-class BasementPersian {
-    void display(){}
+class BasementPersian implements IBasement {
+    public void display(){}
 }
