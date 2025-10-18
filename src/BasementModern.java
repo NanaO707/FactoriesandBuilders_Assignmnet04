@@ -1,0 +1,6 @@
+class BasementModern {
+    void display()
+    {
+
+    }
+}

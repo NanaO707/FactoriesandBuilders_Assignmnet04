@@ -1,0 +1,6 @@
+class BasementQuebecois {
+    void display()
+    {
+
+    }
+}

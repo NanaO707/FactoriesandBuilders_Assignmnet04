@@ -1,0 +1,6 @@
+class IStructure {
+    void display()
+    {
+
+    }
+}
