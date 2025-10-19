@@ -1,12 +1,12 @@
 class PersianFactory extends AbstractFactory {
+
     @Override
-    House makeHouse()
-    {
+    public House MakeHouse() {
         return null;
     }
+
     @Override
-    Duplex makeDuplex()
-    {
+    public Duplex MakeDuplex() {
         return null;
     }
 }

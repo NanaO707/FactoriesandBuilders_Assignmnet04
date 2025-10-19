@@ -1,14 +1,13 @@
 class QuebecoisFactory extends AbstractFactory
 {
+
     @Override
-    House makeHouse()
-    {
-        return null;
-    }
-    @Override
-    Duplex makeDuplex()
-    {
+    public House MakeHouse() {
         return null;
     }
 
+    @Override
+    public Duplex MakeDuplex() {
+        return null;
+    }
 }

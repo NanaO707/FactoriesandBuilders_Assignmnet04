@@ -6,7 +6,19 @@ abstract class AbstractFactory {
 
     public static AbstractFactory FactoryMethod(Product_Type type) {
 
-        return null;
+        switch(type){
+            case Persian:
+
+               return persianFactory;
+
+            case Quebecois:
+                return quebecoisFactory;
+
+            case Modern:
+                return modernFactory;
+
+            default:return null;
+        }
     }
 
     public abstract House MakeHouse();

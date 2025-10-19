@@ -1,5 +1,4 @@
 class House {
-
     IBasement basement;
     IInterior interior;
     IStructure structure;
@@ -28,7 +27,7 @@ class House {
         this.interior = interior;
     }
     void setInterior(IStructure structure) {this.structure = structure;}
-    void setRoof(IRoof roof){this.roof = roof;}
+    static void setRoof(IRoof roof){this.roof = roof;}
 
 
 

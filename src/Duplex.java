@@ -27,7 +27,7 @@ class Duplex {
         this.interior = interior;
     }
     void setInterior(IStructure structure) {this.structure = structure;}
-    void setRoof(IRoof roof){this.roof = roof;}
+    static void setRoof(IRoof roof){this.roof = roof;}
 
 
 

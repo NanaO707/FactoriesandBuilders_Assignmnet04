@@ -1,15 +1,13 @@
-class ModernFactory extends AbstractFactory
+public class ModernFactory extends AbstractFactory
 {
+
     @Override
-    House makeHouse()
-    {
-        return null;
-    }
-    @Override
-    Duplex makeDuplex()
-    {
+    public House MakeHouse() {
         return null;
     }
 
-
+    @Override
+    public Duplex MakeDuplex() {
+        return null;
+    }
 }

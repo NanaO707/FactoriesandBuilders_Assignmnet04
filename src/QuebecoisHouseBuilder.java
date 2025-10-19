@@ -3,11 +3,11 @@ class QuebecoisHouseBuilder implements IBuild {
 
     QuebecoisHouseBuilder() { house = new House();}
 
-    public void BuildBasement () {house.setBasement(basement);}
-    public void BuildInterior () {house.setInterior(interior);}
-    public void BuildStructure () {house.setStructure(structure);}
+    public void BuildBasement (IBasement basement) {house.setBasement(basement);}
+    public void BuildInterior (IStructure interior) {house.setInterior(interior);}
+    public void BuildStructure (IInterior structure) {house.setStructure(structure);}
 
-    public void BuildRoof(){house.setRoof(roof);}
+    public void BuildRoof(IRoof roof){house.setRoof(roof);}
 
     @Override
     public Duplex GetDuplex() {

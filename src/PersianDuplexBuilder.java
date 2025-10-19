@@ -4,15 +4,20 @@ class PersianDuplexBuilder implements IBuild {
 
     PersianDuplexBuilder() { duplex = new Duplex();}
 
-    public void BuildBasement () {duplex.setBasement(basement);}
-    public void BuildInterior () {duplex.setInterior(interior);}
-    public void BuildStructure () {duplex.setStructure(structure);}
+    public void BuildBasement (IBasement basement) {duplex.setBasement(basement);}
+    public void BuildInterior (IStructure interior) {duplex.setInterior(interior);}
+    public void BuildStructure (IInterior structure) {duplex.setStructure(structure);}
 
-    public void BuildRoof(){Duplex.setRoof(roof);}
+    public void BuildRoof(IRoof roof){Duplex.setRoof(roof);}
 
     public Duplex GetDuplex()
     {
         return duplex;
+    }
+
+    @Override
+    public House GetHouse() {
+        return null;
     }
 
 }
