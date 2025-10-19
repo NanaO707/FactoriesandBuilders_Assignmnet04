@@ -1,18 +1,18 @@
-class QuebecoisDuplexBuilder implements IBuilder {
+class QuebecoisDuplexBuilder implements IBuild {
 
-    private Duplex Duplex;
+    private Duplex duplex;
 
-    QuebecoisDuplexBuilder() { Duplex = new Duplex();}
+    QuebecoisDuplexBuilder() { duplex = new Duplex();}
 
-    public void buildBasement () {Duplex.setBasement(basement);}
-    public void buildInterior () {Duplex.setInterior(interior);}
-    public void buildStructure () {Duplex.setStructure(structure);}
+    public void BuildBasement () {duplex.setBasement(basement);}
+    public void BuildInterior () {duplex.setInterior(interior);}
+    public void BuildStructure () {duplex.setStructure(structure);}
 
-    public void buildRoof(){Duplex.setRoof(roof);}
+    public void BuildRoof(){duplex.setRoof(roof);}
 
     public Duplex GetDuplex()
     {
-        return Duplex;
+        return duplex;
     }
 
 }

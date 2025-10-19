@@ -1,22 +1,35 @@
 class Engineer {
-    IBuilder IBuild;
+    IBuild iBuilder;
 
-    Engineer(IBuilder IBuild)
+    Engineer(IBuild iBuilder)
     {
-        this.IBuild = IBuild;
+        this.iBuilder = iBuilder;
     }
 
-    void createDuplex() //design pattern
+    void CreateDuplex() //design pattern
     {
-        IBuild.buildBasement();
-        IBuild.buildStructure();
-        IBuild.buildInterior();
-        IBuild.buildRoof();
+        iBuilder.BuildBasement();
+        iBuilder.BuildStructure();
+        iBuilder.BuildInterior();
+        iBuilder.BuildRoof();
+    }
+
+    void CreateHouse() //design pattern
+    {
+        iBuilder.BuildBasement();
+        iBuilder.BuildStructure();
+        iBuilder.BuildInterior();
+        iBuilder.BuildRoof();
     }
 
     Duplex GetDuplex()
     {
-        return IBuild.GetDuplex();
+        return iBuilder.GetDuplex();
+    }
+
+    House GetHouse()
+    {
+        return iBuilder.GetHouse();
     }
 
 

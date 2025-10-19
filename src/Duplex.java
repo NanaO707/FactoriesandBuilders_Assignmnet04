@@ -31,7 +31,7 @@ class Duplex {
 
 
 
-    void displayDuplex()
+    void DisplayDuplex()
     {
         System.out.println("Duplex with: ");
         System.out.println("Basement: " +  getBasement());

@@ -1,15 +1,39 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+ public class Main {
+    public static void main(String[] args) {
+
+        ModernDuplexBuilder modernDuplexBuilder = new ModernDuplexBuilder();
+        Engineer engineer = new Engineer(modernDuplexBuilder);
+        engineer.CreateDuplex();
+        engineer.GetDuplex().DisplayDuplex();
+
+        PersianDuplexBuilder persianDuplexBuilder = new PersianDuplexBuilder();
+        Engineer engineer2 = new Engineer(persianDuplexBuilder);
+        engineer2.CreateDuplex();
+        engineer2.GetDuplex().DisplayDuplex();
+
+
+        QuebecoisDuplexBuilder quebecoisDuplexBuilder = new QuebecoisDuplexBuilder();
+        Engineer engineer3 = new Engineer(quebecoisDuplexBuilder);
+        engineer3.CreateDuplex();
+        engineer3.GetDuplex().DisplayDuplex();
+
+        ModernHouseBuilder modernHouseBuilder = new ModernHouseBuilder();
+        Engineer engineer4 = new Engineer(modernHouseBuilder);
+        engineer4.CreateHouse();
+        engineer4.GetHouse().DisplayHouse();
+
+        PersianHouseBuilder persianHouseBuilder = new PersianHouseBuilder();
+        Engineer engineer5 = new Engineer(persianHouseBuilder);
+        engineer5.CreateHouse();
+        engineer5.GetHouse().DisplayHouse();
+
+        QuebecoisHouseBuilder  quebecoisHouseBuilder = new  QuebecoisHouseBuilder();
+        Engineer engineer6 = new Engineer(quebecoisHouseBuilder);
+        engineer6.CreateHouse();
+        engineer6.GetHouse().DisplayHouse();
+
+
+
     }
 }
