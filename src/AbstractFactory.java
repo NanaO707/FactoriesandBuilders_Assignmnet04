@@ -1,13 +1,15 @@
 abstract class AbstractFactory {
-    static PersianFactory persianFactory;
-    static QuebecoisFactory quebecoisFactory;
-    static ModernFactory modernFactory;
 
-    static AbstractFactory FactoryMethod(Product_Type type) {
+    public static PersianFactory persianFactory;
+    public static QuebecoisFactory quebecoisFactory;
+    public static ModernFactory modernFactory;
+
+    public static AbstractFactory FactoryMethod(Product_Type type) {
+
         return null;
     }
 
-    abstract House makeHouse();
+    public abstract House MakeHouse();
 
-    abstract Duplex makeDuplex();
+    public abstract Duplex MakeDuplex();
 }
