@@ -8,18 +8,18 @@ class Engineer {
 
     void CreateDuplex() //design pattern
     {
-        iBuilder.BuildBasement(basement);
-        iBuilder.BuildStructure(structure);
-        iBuilder.BuildInterior(interior);
-        iBuilder.BuildRoof(roof);
+        iBuilder.BuildBasement();
+        iBuilder.BuildStructure();
+        iBuilder.BuildInterior();
+        iBuilder.BuildRoof();
     }
 
     void CreateHouse() //design pattern
     {
-        iBuilder.BuildBasement(basement);
-        iBuilder.BuildStructure(structure);
-        iBuilder.BuildInterior(interior);
-        iBuilder.BuildRoof(roof);
+        iBuilder.BuildBasement();
+        iBuilder.BuildStructure();
+        iBuilder.BuildInterior();
+        iBuilder.BuildRoof();
     }
 
     Duplex GetDuplex()

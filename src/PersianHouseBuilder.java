@@ -3,11 +3,11 @@ class PersianHouseBuilder implements IBuild {
 
     PersianHouseBuilder() { house = new House();}
 
-    public void BuildBasement (IBasement basement) { house.setBasement(basement);}
-    public void BuildInterior (IStructure interior) {house.setInterior(interior);}
-    public void BuildStructure (IInterior structure) {house.setStructure(structure);}
+    public void BuildBasement () {house.setBasement(new BasementPersian());}
+    public void BuildInterior () {house.setInterior(new InteriorPersian());}
+    public void BuildStructure () {house.setStructure(new StructurePersian());}
 
-    public void BuildRoof(IRoof roof){House.setRoof(roof);}
+    public void BuildRoof(){house.setRoof(new RoofPersian());}
 
     @Override
     public Duplex GetDuplex() {

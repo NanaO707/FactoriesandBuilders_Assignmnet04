@@ -1,8 +1,8 @@
 class House {
-    IBasement basement;
-    IInterior interior;
-    IStructure structure;
-    IRoof roof;
+    private IBasement basement;
+    private IInterior interior;
+    private IStructure structure;
+    private IRoof roof;
 
     IBasement getBasement()
     {
@@ -22,12 +22,12 @@ class House {
     {
         this.basement = basement;
     }
-    void setStructure(IInterior interior)
+    void setInterior(IInterior interior)
     {
         this.interior = interior;
     }
-    void setInterior(IStructure structure) {this.structure = structure;}
-    static void setRoof(IRoof roof){this.roof = roof;}
+    void setStructure(IStructure structure) {this.structure = structure;}
+    void setRoof(IRoof roof){this.roof = roof;}
 
 
 

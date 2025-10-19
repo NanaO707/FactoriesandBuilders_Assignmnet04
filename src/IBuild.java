@@ -1,9 +1,10 @@
 public interface IBuild {
 
-    void BuildBasement(IBasement basement);
-    void BuildStructure(IInterior structure);
-    void BuildInterior(IStructure interior);
-    void BuildRoof(IRoof roof);
+    //no params
+    void BuildBasement();
+    void BuildStructure();
+    void BuildInterior();
+    void BuildRoof();
 
     Duplex GetDuplex();
 

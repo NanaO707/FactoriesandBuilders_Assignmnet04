@@ -4,11 +4,10 @@ class ModernDuplexBuilder implements IBuild {
 
     ModernDuplexBuilder() { duplex = new Duplex();}
 
-    public void BuildBasement (IBasement basement) {duplex.setBasement(basement);}
-    public void BuildInterior (IStructure interior) {duplex.setInterior(interior);}
-    public void BuildStructure (IInterior structure) {duplex.setStructure(structure);}
-
-    public void BuildRoof(IRoof roof){duplex.setRoof(duplex.roof);}
+    public void BuildBasement() {duplex.setBasement(new BasementModern());}
+    public void BuildInterior() {duplex.setInterior(new InteriorModern());}
+    public void BuildStructure() {duplex.setStructure(new StructureModern());}
+    public void BuildRoof(){duplex.setRoof(new RoofModern());}
 
     public Duplex GetDuplex()
     {

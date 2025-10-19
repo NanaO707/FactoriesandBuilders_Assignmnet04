@@ -22,12 +22,9 @@ class Duplex {
     {
         this.basement = basement;
     }
-    void setStructure(IInterior interior)
-    {
-        this.interior = interior;
-    }
-    void setInterior(IStructure structure) {this.structure = structure;}
-    static void setRoof(IRoof roof){this.roof = roof;}
+    void setInterior(IInterior interior) {this.interior = interior;}
+    void setStructure(IStructure structure) {this.structure = structure;}
+    void setRoof(IRoof roof){this.roof = roof;}
 
 
 

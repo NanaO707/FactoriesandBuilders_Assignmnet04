@@ -4,11 +4,10 @@ class PersianDuplexBuilder implements IBuild {
 
     PersianDuplexBuilder() { duplex = new Duplex();}
 
-    public void BuildBasement (IBasement basement) {duplex.setBasement(basement);}
-    public void BuildInterior (IStructure interior) {duplex.setInterior(interior);}
-    public void BuildStructure (IInterior structure) {duplex.setStructure(structure);}
-
-    public void BuildRoof(IRoof roof){Duplex.setRoof(roof);}
+    public void BuildBasement() {duplex.setBasement(new BasementPersian());}
+    public void BuildInterior() {duplex.setInterior(new InteriorPersian());}
+    public void BuildStructure() {duplex.setStructure(new StructurePersian());}
+    public void BuildRoof(){duplex.setRoof(new RoofPersian());}
 
     public Duplex GetDuplex()
     {

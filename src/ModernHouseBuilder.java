@@ -4,11 +4,11 @@ class ModernHouseBuilder implements IBuild {
 
     ModernHouseBuilder() { house = new House();}
 
-    public void BuildBasement (IBasement basement) {house.setBasement(basement);}
-    public void BuildInterior (IStructure interior) {house.setInterior(interior);}
-    public void BuildStructure (IInterior structure) {house.setStructure(structure);}
+    public void BuildBasement () {house.setBasement(new BasementModern());}
+    public void BuildInterior () {house.setInterior(new InteriorModern());}
+    public void BuildStructure () {house.setStructure(new StructureModern());}
 
-    public void BuildRoof(IRoof roof){house.setRoof(roof);}
+    public void BuildRoof(){house.setRoof(new RoofModern());}
 
     @Override
     public Duplex GetDuplex() {
