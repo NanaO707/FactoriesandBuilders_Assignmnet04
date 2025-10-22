@@ -1,8 +1,24 @@
 class ModernHouseBuilder implements IBuild {
 
     private House house;
+    private IBuild nextBuilder;
 
     ModernHouseBuilder() { house = new House();}
+
+    ModernHouseBuilder(IBuild nextBuilder)
+    {
+        this.nextBuilder = nextBuilder;
+    }
+    @Override
+    public void Build(String houseType) {
+        if(houseType.equals("Modern")){
+            System.out.println("Building a modern house");
+
+        } else if (nextBuilder != null){
+            nextBuilder.Build(houseType);
+        }
+
+    }
 
     public void BuildBasement () {house.setBasement(new BasementModern());}
     public void BuildInterior () {house.setInterior(new InteriorModern());}
@@ -19,4 +35,6 @@ class ModernHouseBuilder implements IBuild {
     {
         return house;
     }
+
+
 }

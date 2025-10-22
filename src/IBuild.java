@@ -1,5 +1,8 @@
 public interface IBuild {
 
+    void Build(String houseType);
+
+
     //no params
     void BuildBasement();
     void BuildStructure();
@@ -9,4 +12,5 @@ public interface IBuild {
     Duplex GetDuplex();
 
     House GetHouse();
+
 }
